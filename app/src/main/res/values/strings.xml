@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">To do list</string>
+    <string name="label_new_task">Criar Tarefa</string>
+    <string name="label_title">Título</string>
+    <string name="label_description">Descrição</string>
+    <string name="label_date">Data</string>
+    <string name="label_hour">Hora</string>
+    <string name="label_cancel">Cancelar</string>
+    <string name="label_tasks">Tarefas</string>
+    <string name="label_description_new_task">Nova tarefa</string>
+    <string name="label_edit">Editar</string>
+    <string name="label_delete">Deletar</string>
+    <string name="label_update">Atualizar</string>
+    <string name="label_you_dont_have_tasks">Ops! Você não possui\n nenhuma tarefa</string>
+
+
+    <string name="subscriber_inserted_successfully">Subscriber was successfully inserted</string>
+    <string name="subscriber_error_to_insert">There was an error when inserting Subscriber</string>
+    <string name="subscriber_error_to_update">There was an error when updating Subscriber</string>
+    <string name="subscriber_error_to_delete">There was an error when deleting Subscriber</string>
+</resources>
