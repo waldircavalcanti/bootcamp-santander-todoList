@@ -83,7 +83,7 @@ class MainActivity : AppCompatActivity() {
 
         //Observer
         taskViewModel.allTasks.observe(this, Observer { tasks ->
-            // Atualize a cópia em cache das palavras no adaptador.
+
             tasks?.let { adapter.submitList(it) }
         })
     }

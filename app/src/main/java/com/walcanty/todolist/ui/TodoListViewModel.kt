@@ -7,10 +7,7 @@ import kotlinx.coroutines.launch
 
 class TodoListViewModel(private val repository: TodoListRepository) : ViewModel() {
 
-    // Usar LiveData e armazenar em cache o que allWords retorna tem vários benefícios:
-    // Podemos colocar um observador nos dados (em vez de pesquisar as alterações) e apenas atualizar o
-    // a IU quando os dados realmente mudam.
-    // O repositório é completamente separado da IU por meio do ViewModel.
+
     val allTasks: LiveData<List<TodoList>> = repository.allTodoList.asLiveData()
 
     /**
