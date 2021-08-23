@@ -35,6 +35,8 @@ class AddTaskActivity : AppCompatActivity() {
 
         insertListeners()
 
+
+
         if(intent.hasExtra(TASK_ID)){
             binding.toolBar.title = getString(R.string.label_edit)
             binding.btnNewTask.text = getString(R.string.label_update)
@@ -81,6 +83,11 @@ class AddTaskActivity : AppCompatActivity() {
             finish()
         }
 
+        binding.toolBar.setNavigationOnClickListener {
+            finish()
+        }
+
+
         binding.btnNewTask.setOnClickListener {
 
                 val replyIntent = Intent()
@@ -102,7 +109,6 @@ class AddTaskActivity : AppCompatActivity() {
                 }
 
         }
-
 
     }
 
