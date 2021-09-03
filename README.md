@@ -19,17 +19,24 @@ Aplicativo de tarefas onde o usuário pode adicionar, deletar, atualizar e ver i
 ## Layouts
 <br>
   <p align="left">
+  
             <img alt="No tasks"
-            src="https://github.com/waldircavalcanti/bootcamp-santander-todoList/blob/main/assets/Screenshot_1.jpg">
+            src="https://https://github.com/waldircavalcanti/bootcamp-santander-todoList/blob/main/assets/Screenshot_1.jpg" width="20%"
+            title="No tasks">
             <img alt="create task"
-            src="https://github.com/waldircavalcanti/bootcamp-santander-todoList/blob/main/assets/Screenshot_4.jpg">
+            src="https://https://github.com/waldircavalcanti/bootcamp-santander-todoList/blob/main/assets/Screenshot_4.jpg" width="20%"
+            title="create task">
             <img alt="tasks"
-            src="https://github.com/waldircavalcanti/bootcamp-santander-todoList/blob/main/assets/Screenshot_3.jpg">
-            <img alt="edit task"
-            src="https://github.com/waldircavalcanti/bootcamp-santander-todoList/blob/main/assets/Screenshot_2.jpg">
-            <img alt="edit task"
-            src="https://github.com/waldircavalcanti/bootcamp-santander-todoList/blob/main/assets/Screenshot_5.jpg">
-            
+            src="https://https://github.com/waldircavalcanti/bootcamp-santander-todoList/blob/main/assets/Screenshot_3.jpg" width="20%"
+            title="tasks">
+            <img alt="tasks"
+            src="https://https://github.com/waldircavalcanti/bootcamp-santander-todoList/blob/main/assets/Screenshot_2.jpg" width="20%"
+            title="tasks">
+            <img alt="tasks"
+            src="https://https://github.com/waldircavalcanti/bootcamp-santander-todoList/blob/main/assets/Screenshot_5.jpg" width="20%"
+            title="tasks">
+  
+                     
 
 
 
