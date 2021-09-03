@@ -10,7 +10,6 @@ class TodoListRepository(private val todoListDao: TodoListDao) {
     val allTodoList: Flow<List<TodoList>> = todoListDao.getAll()
 
 
-
     @Suppress("RedundantSuspendModifier")
     @WorkerThread
     suspend fun insert(todoList: TodoList){

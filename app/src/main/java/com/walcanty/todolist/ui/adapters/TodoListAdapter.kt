@@ -35,7 +35,8 @@ class TodoListAdapter : ListAdapter<TodoList, TodoListAdapter.TodoListViewHolder
         fun bind(item: TodoList) {
             binding.tvTitle.text = item.title
             binding.tvDescription.text = item.description
-            binding.tvDate.text = "${item.date} ${item.hour}"
+            binding.tvDate.text = "${item.date} "
+            binding.tvHour.text = "${item.hour}"
             binding.ivMore.setOnClickListener {
                 showPopup(item)
             }

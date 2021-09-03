@@ -6,27 +6,20 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.text.TextUtils
 import android.util.Log
-import androidx.activity.viewModels
 import com.google.android.material.datepicker.MaterialDatePicker
 import com.google.android.material.timepicker.MaterialTimePicker
 import com.google.android.material.timepicker.TimeFormat
 import com.walcanty.todolist.R
-import com.walcanty.todolist.application.TodoListApplication
-import com.walcanty.todolist.database.dao.TodoListDao
 import com.walcanty.todolist.database.model.TodoList
 import com.walcanty.todolist.databinding.ActivityAddTaskBinding
 import com.walcanty.todolist.extensions.format
 import com.walcanty.todolist.extensions.text
-import com.walcanty.todolist.repository.TodoListRepository
-import com.walcanty.todolist.ui.TodoListViewModel
-import com.walcanty.todolist.ui.TodoListViewModelFactory
 import java.util.*
 
 class AddTaskActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityAddTaskBinding
-
-
+    private var updateId = 0
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -36,14 +29,18 @@ class AddTaskActivity : AppCompatActivity() {
         insertListeners()
 
 
-
         if(intent.hasExtra(TASK_ID)){
             binding.toolBar.title = getString(R.string.label_edit)
             binding.btnNewTask.text = getString(R.string.label_update)
-           var id = intent.getIntExtra(TASK_ID,0)
-
-
-            Log.e("TAG","listenerUpdate $id.")
+           val task = intent.getParcelableExtra<TodoList>(TASK_ID)
+            if (task != null) {
+                updateId = task.id
+                binding.tilTitle.text = task.title
+                binding.tilDescription.text = task.description
+                binding.tilDate.text = task.date
+                binding.tilHour.text = task.hour
+            }
+            Log.e("TAG","listenerUpdate $task.")
 
         }
 
@@ -96,6 +93,7 @@ class AddTaskActivity : AppCompatActivity() {
                     setResult(Activity.RESULT_CANCELED, replyIntent)
                 } else {
                     val task = TodoList(
+                        id = updateId,
                         title = binding.tilTitle.text,
                         description = binding.tilDescription.text,
                         date = binding.tilDate.text,

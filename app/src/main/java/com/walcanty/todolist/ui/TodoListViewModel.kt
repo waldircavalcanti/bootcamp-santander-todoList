@@ -10,9 +10,7 @@ class TodoListViewModel(private val repository: TodoListRepository) : ViewModel(
 
     val allTasks: LiveData<List<TodoList>> = repository.allTodoList.asLiveData()
 
-    /**
-     * Lançamento de uma nova co-rotina para inserir os dados de forma não bloqueadora
-     */
+
     fun insert(todoList: TodoList) = viewModelScope.launch {
         repository.insert(todoList)
     }

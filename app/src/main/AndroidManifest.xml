@@ -10,7 +10,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.ToDoList">
-        <activity android:name=".ui.view.AddTaskActivity" />
+        <activity android:name=".ui.view.AddTaskActivity"
+            android:windowSoftInputMode="stateHidden|adjustPan"
+            android:configChanges="orientation|screenSize"/>
 
         <activity android:name=".MainActivity">
             <intent-filter>

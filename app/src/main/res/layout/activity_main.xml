@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/backbround"
     tools:context=".MainActivity">
 
     <TextView
@@ -14,20 +15,25 @@
         app:layout_constraintTop_toTopOf="parent"
         android:layout_marginTop="40dp"
         android:layout_margin="16dp"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"/>
+
+    <include
+        android:id="@+id/include_empty"
+        layout="@layout/empty_state" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rv_tasks"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_marginTop="16dp"
-        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layoutManager="androidx.recyclerview.widget.StaggeredGridLayoutManager"
         app:layout_constraintBottom_toTopOf="@id/fab"
         app:layout_constraintTop_toBottomOf="@id/tv_title"
         app:layout_constraintVertical_bias="0.0"
         tools:itemCount="8"
+        tools:visibility="gone"
         tools:layout_editor_absoluteX="0dp"
         tools:listitem="@layout/item_task" />
 
