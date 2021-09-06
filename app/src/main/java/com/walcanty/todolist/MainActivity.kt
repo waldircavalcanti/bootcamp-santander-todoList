@@ -51,7 +51,7 @@ class MainActivity : AppCompatActivity() {
                     val reply = it.getParcelableExtra<TodoList>("REPLY")?.let {
                         taskViewModel.insert(it)
                         Toast.makeText(
-                            this,"Task entered successfully",Toast.LENGTH_SHORT).show()
+                            this,"Tarefa criada com sucesso",Toast.LENGTH_SHORT).show()
                         Log.e("TAG", "Insert Banco ")
                     }
 
@@ -69,7 +69,7 @@ class MainActivity : AppCompatActivity() {
                     val reply = it.getParcelableExtra<TodoList>("REPLY")?.let {
                         taskViewModel.update(it)
                         Toast.makeText(
-                            this,"Task deleted successfully",Toast.LENGTH_SHORT).show()
+                            this,"Tarefa atualizada com sucesso",Toast.LENGTH_SHORT).show()
                         Log.e("TAG", "Insert Banco $it")
                     }
                 }
@@ -93,7 +93,8 @@ class MainActivity : AppCompatActivity() {
 
         adapter.listenerDelete = {
             taskViewModel.delete(it.id)
-            Log.e("TAG", "listenerDelete $it")
+            Toast.makeText(
+                this,"Tarefa deletada com sucesso",Toast.LENGTH_SHORT).show()
         }
 
 
