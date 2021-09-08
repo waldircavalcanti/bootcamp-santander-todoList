@@ -1,6 +1,6 @@
 # Todolist
 
-APlicativo desenvolvido na conclusão do Santander Bootcamp | Mobile Developer em parceria com a [DIO](https://digitalinnovation.one/)
+Aplicativo desenvolvido na conclusão do Santander Bootcamp | Mobile Developer em parceria com a [DIO](https://digitalinnovation.one/)
 
 ## Sobre o projeto
 
