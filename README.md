@@ -19,9 +19,7 @@ Aplicativo de tarefas onde o usuário pode adicionar, deletar, atualizar e ver i
 ## Layouts
 <br>
   <p align="left">
-<img alt="gif"
-            src="https://github.com/waldircavalcanti/bootcamp-santander-todoList/blob/main/assets/Screenrecorder.gif" width="30%"
-            title="gif">
+
 <img alt="no tasks"
             src="https://github.com/waldircavalcanti/bootcamp-santander-todoList/blob/main/assets/Screenshot_1.jpg" width="30%"
             title="no tasks">
@@ -38,7 +36,11 @@ Aplicativo de tarefas onde o usuário pode adicionar, deletar, atualizar e ver i
             src="https://github.com/waldircavalcanti/bootcamp-santander-todoList/blob/main/assets/Screenshot_5.jpg" width="30%"
             title="edit task">
   
-               
+      
+
+https://user-images.githubusercontent.com/64696649/132603332-c040ff9e-6741-48ba-a6e5-f8912140c6b9.mp4
+
+         
 
 
 
